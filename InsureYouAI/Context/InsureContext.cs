@@ -3,8 +3,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InsureYouAI.Context
 {
-    public class InsureContext
-    {
+   
+    
         public class InsureContext : DbContext
         {
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -18,14 +18,12 @@ namespace InsureYouAI.Context
             public DbSet<Category> Categories { get; set; }
             public DbSet<Contact> Contacts { get; set; }
             public DbSet<Message> Messages { get; set; }
-            public DbSet<PricingPlan> PricingPlans { get; set;
-  
-                public DbSet<Service> Services { get; set; }
+            public DbSet<PricingPlan> PricingPlans { get; set; }
+            public DbSet<Service> Services { get; set; }
             public DbSet<Slider> Sliders { get; set; }
             public DbSet<Testimonial> Testimonials { get; set; }
-            public DbSet<TrailerVideo> TrailerVideo
-            { get; set; }
+            public DbSet<TrailerVideo> TrailerVideo{ get; set; }
 
             }
     }
-}
+
